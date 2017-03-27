@@ -16,12 +16,17 @@ namespace Town
 
 
 
-        public override string ToString() {
+        public override string ToString()
+        {
             return $"house : {Name}";
-}
-        
-        
-         
+        }
+
+        public House(string BuildingType)
+        {
+            this.BuildingType = BuildingType;
+        }
+
+        public string BuildingType { get; set; }
         public int NumberOfRoom { get; set; }
         public string ConstructionMaterial { get; set; }
         public double Height { get; set; }

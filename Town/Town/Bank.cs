@@ -21,8 +21,13 @@ namespace Town
             return $"bank : {Name}";
         }
 
+        public Bank(string BuildingType)
+        {
+            this.BuildingType = BuildingType;
+        }
 
 
+        public string BuildingType { get; set; }
         public int NumberOfRoom { get; set; }
         public string ConstructionMaterial { get; set; }
         public double Height { get; set; }
