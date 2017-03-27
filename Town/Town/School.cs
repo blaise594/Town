@@ -26,6 +26,8 @@ namespace Town
             this.BuildingType = BuildingType;
         }
 
+        public School() { }
+
         public string BuildingType { get; set; }
         public int NumberOfRoom { get; set; }
         public string ConstructionMaterial { get; set; }

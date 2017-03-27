@@ -26,6 +26,7 @@ namespace Town
             this.BuildingType = BuildingType;
         }
 
+        public Bank() { }
 
         public string BuildingType { get; set; }
         public int NumberOfRoom { get; set; }
