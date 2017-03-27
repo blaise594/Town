@@ -59,5 +59,10 @@ namespace Town
         public int NumberOfStudents;
         public Boolean InSession;
         public int NumberOfTeachers;
+
+        public string TeacherStudentRatio
+        {
+            get { return $"{NumberOfTeachers}:{NumberOfStudents}"; }
+        }
     }
 }

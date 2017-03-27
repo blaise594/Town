@@ -55,6 +55,15 @@ namespace Town
         {
             _CurrentOccupants--;
         }
-        private Double AmountOfMoney;
+        public Double AmountOfMoney { get { return _AmountOfMoney; } }
+        private Double _AmountOfMoney;
+        public void DepositMoney(double amount)
+        {
+            _AmountOfMoney += amount;
+        }
+        public void WithdrawMoney(double amount)
+        {
+            _AmountOfMoney -= amount;
+        }
     }
 }
